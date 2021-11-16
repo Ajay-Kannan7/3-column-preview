@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:lex;
+}
+@font-face{
+    font-family:lex;
+    src:url(../fonts/LexendDeca-VariableFont_wght.ttf);
+}
+body{
+    background-image:url(../images/background.jpg);
+    height:100vh;
+    color:white;
+}
+/*Cards' designing begins here*/
+.container{
+    width: 70%;
+    margin-top:3%;
+    padding-bottom:30px;
+}
+/*Card 1 design begins here*/
+.container .row .card1{
+    width:33.3%;
+    height:80vh;
+    padding:10% 3%;
+    background-color:#e28525;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    animation:fadeInRight 1.5s ease-in;
+}
+.container .row .card1 img,
+.container .row .card1 h2{
+    margin-bottom:7%;
+}
+.container .row .card1 p{
+    margin-bottom:20%;
+}
+.container .row .card1 button{
+    border-radius:20px;
+    font-size:17px;
+    color:#e28525;
+    transition:all 0.2s ease-in;
+}
+.container .row .card1 button:hover{
+    background-color:transparent;
+    color:#fff;
+    border:1.5px solid #fff;
+}
+/*Card 1 design ends here*/
+/*Card 2 design ends here*/
+.container .row .card2{
+    width:33.3%;
+    height:80vh;
+    padding:10% 3%;
+    background-color:#016972;
+    animation:fadeIn 1.7s ease-in;
+}
+.container .row .card2 img,
+.container .row .card2 h2{
+    margin-bottom:7%;
+}
+.container .row .card2 p{
+    margin-bottom:20%;
+}
+.container .row .card2 button{
+    border-radius:20px;
+    font-size:17px;
+    color:#016972;
+    transition:all 0.2s ease-in;
+}
+.container .row .card2 button:hover{
+    background-color:transparent;
+    color:#fff;
+    border:1.5px solid #fff;
+}
+/*Card 2 design ends here*/
+/*Card 3 design ends here*/
+.container .row .card3{
+    width:33.3%;
+    height:80vh;
+    padding:10% 3%;
+    background-color:#00403f;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    animation:fadeInLeft 1.5s ease-in;
+}
+.container .row .card3 img,
+.container .row .card3 h2{
+    margin-bottom:7%;
+}
+.container .row .card3 p{
+    margin-bottom:20%;
+}
+.container .row .card3 button{
+    border-radius:20px;
+    font-size:17px;
+    color:#00403f;
+    transition:all 0.2s ease-in;
+}
+.container .row .card3 button:hover{
+    background-color:transparent;
+    color:#fff;
+    border:1.5px solid #fff;
+}
+/*Card 3 design ends here*/
+/*Responsive design starts here*/
+@media only screen and (max-width:1200px){
+    .container{
+        margin-top:3%;
+        margin-bottom:3%;
+    }
+    .container .row .card1,
+    .container .row .card2,
+    .container .row .card3{
+        width:100%;
+        padding:10% 10%;
+        animation:fadeIn 1s ease-in;
+    }
+    .container .row .card1{
+        border-bottom-left-radius:0px;
+        border-top-right-radius:15px;
+    }
+    .container .row .card3{
+        border-top-right-radius:0px;
+        border-bottom-left-radius:15px;
+    }
+}
+/*Responsive design ends here*/
+/*Cards' designing ends here*/
